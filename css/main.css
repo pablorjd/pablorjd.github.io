@@ -4,9 +4,12 @@
 }
 
 .justify-content-end{
-    align-content: flex-end !important;
+    text-align: end;
 }
 body{
     padding: 0;
     margin: 0;
+}
+#fin {
+    align-content: flex-end !important;
 }
