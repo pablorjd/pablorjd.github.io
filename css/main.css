@@ -2,14 +2,10 @@
     font-size: 18px;
     align-items: flex-end;
 }
+#logo{
+    height: 12px;
+}
 
-.justify-content-end{
-    text-align: end;
-}
-body{
-    padding: 0;
-    margin: 0;
-}
-#fin {
-    align-content: flex-end !important;
+.textto {
+    text-align: center;
 }
