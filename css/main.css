@@ -1,3 +1,12 @@
-.logo{
-    height: 40px;
+#navbarNavAltMarkup{
+    font-size: 18px;
+    align-items: flex-end;
+}
+
+.justify-content-end{
+    align-content: flex-end !important;
+}
+body{
+    padding: 0;
+    margin: 0;
 }
