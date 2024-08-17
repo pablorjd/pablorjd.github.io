@@ -1,0 +1,53 @@
+.sidenav-container {
+  height: 100%;
+  /* border-radius: 0%; */
+  @apply dark:bg-slate-900 text-white !important;
+}
+
+.sidenav {
+  width: 100px;
+  @apply dark:bg-slate-900 text-white !important;
+}
+
+.sidenav .mat-toolbar {
+
+  @apply dark:bg-slate-900 text-white !important;
+}
+
+.mat-toolbar.mat-primary {
+  @apply dark:bg-slate-900 text-white;
+  /* position: sticky; */
+  /* top: 0; */
+  z-index: 1;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 80px;
+
+  a {
+    margin: 20px 0;
+    /* padding: 40px 0 16px 0; */
+
+    color: white;
+    font-size: 24px;
+  }
+}
+
+.content-app {
+  /* padding: 16px; */
+  @apply  dark:bg-slate-800;
+}
+
+
+.nav-links-socials {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 80px;
+  a {
+    font-size: 12px;
+    @apply dark:text-slate-600;
+  }
+}
