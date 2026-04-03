@@ -1,0 +1,18 @@
+---
+import Sidebar from "../components/Sidebar";
+import BaseLayout from "./BaseLayout.astro";
+import MouseLight from "../components/MouseLight.jsx";
+---
+
+<BaseLayout>
+  <div class="container">
+    <Sidebar client:visible />
+    <MouseLight client:load />
+    <div class="row min-vh-100">
+      <!-- Contenido -->
+      <div class="mt-5 ml-4 col-md-9 col-sm-12 col-xs-12 col-lg-10 px-md-4">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

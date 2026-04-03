@@ -1,0 +1,209 @@
+/* Fondo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ccd6f6;
+    line-height: 1.6;
+}
+
+body {
+
+    
+  
+  
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif !important;
+  background-color: #121e41;
+  
+
+  color: #ccd6f6;
+  
+
+   background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    #1a2a5a 0%,
+    #0f172a 40%
+  );
+  transition: background 0.1s;
+}
+
+
+
+/* Títulos */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Texto */
+p {
+  font-size: 1rem;
+  color: #8892b0;
+}
+
+/* Navbar */
+
+.navbar {
+  background: transparent;
+  padding: 20px 0;
+}
+
+.navbar a {
+  color: #ccd6f6;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #64ffda;
+}
+
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #64ffda;
+  margin-top: 8px;
+}
+
+/* Estilos para los proyectos */
+
+/* .section-hover {
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  transition: all 0.3s ease;
+}
+
+.section-hover:hover {
+  background-color: #1a2a5a;
+} */
+
+/* Experiencia y proyectos */
+.experience-item,
+.project-item {
+  margin-top: 25px;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #8892b0;
+}
+
+/* Tags */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.custom-navbar {
+  
+    
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Marca */
+.navbar-brand {
+  color: #ccd6f6;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Links */
+.nav-link {
+  color: #8892b0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #64ffda;
+}
+
+/* Línea animada */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #64ffda;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-link.active {
+  color: #64ffda;
+}
+
+
+#about,
+#experience,
+#projects {
+  scroll-margin-top: 150px;
+}
+
+
+section {
+  scroll-margin-top: 150px; /* altura del navbar */
+}
+
+
+.navbar-brand {
+/* font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px; */
+
+    font-size: 1.6rem;
+  font-weight: 700;
+  color: #64ffda; /* color acento */
+}

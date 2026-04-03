@@ -1,0 +1,107 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "bootstrap/dist/css/bootstrap.min.css";
+---
+
+<MainLayout>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-auto">
+        <section id="about" class="section-hover">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy desarrollador frontend con experiencia en la construcción de
+            aplicaciones web modernas, enfocadas en rendimiento, accesibilidad y
+            experiencia de usuario. Me gusta trabajar con tecnologías como
+            React, Angular y TypeScript, creando interfaces limpias y
+            escalables.
+          </p>
+          <p>
+            Actualmente me encuentro perfeccionando mis habilidades en
+            arquitectura de software, desarrollo móvil y buenas prácticas de
+            ingeniería, con el objetivo de construir productos sólidos y de alto
+            impacto.
+          </p>
+        </section>
+
+        <section id="experience" class="section-hover">
+          <h2>Experiencia</h2>
+
+          <div class="experience-item">
+            <span class="date">2023 - Presente</span>
+            <h3>Desarrollador Frontend — Banco Santander</h3>
+            <p>
+              Desarrollo y mantención de aplicaciones internas utilizando
+              Angular y TypeScript, implementando buenas prácticas de
+              arquitectura limpia, optimización de rendimiento y mejoras en la
+              experiencia de usuario.
+            </p>
+            <div class="tags">
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>SQL</span>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <span class="date">2021 - 2023</span>
+            <h3>Desarrollador Web</h3>
+            <p>
+              Participación en desarrollo de aplicaciones web fullstack
+              utilizando PHP, JavaScript y bases de datos relacionales,
+              enfocándome en soluciones eficientes y mantenibles.
+            </p>
+            <div class="tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section-hover">
+          <h2>Proyectos</h2>
+
+          <div class="project-item">
+            <h3>App de Seguimiento de Hábitos</h3>
+            <p>
+              Aplicación móvil desarrollada con Kotlin y arquitectura MVVM +
+              Clean Architecture, que permite gestionar hábitos diarios con
+              recordatorios y estadísticas.
+            </p>
+            <div class="tags">
+              <span>Kotlin</span>
+              <span>Android</span>
+              <span>MVVM</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h3>Plataforma de Monitoreo de Sistema</h3>
+            <p>
+              Aplicación de escritorio en Python con interfaz gráfica para
+              monitorear CPU, RAM y almacenamiento en tiempo real.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Tkinter</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h3>Red Social para Mascotas</h3>
+            <p>
+              Proyecto fullstack con Spring Boot, Angular y MySQL, enfocado en
+              permitir a usuarios compartir contenido sobre sus mascotas.
+            </p>
+            <div class="tags">
+              <span>Spring Boot</span>
+              <span>Angular</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</MainLayout>

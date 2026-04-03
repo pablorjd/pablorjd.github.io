@@ -1,0 +1,40 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/global.css";
+
+---
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Mi App</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id")!!;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
